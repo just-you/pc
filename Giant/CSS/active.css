@@ -1,0 +1,233 @@
+@charset "UTF-8";
+.bgimg{
+	z-index: 1;
+	height: 500px;
+	background-image: url(../images/news/newscenter.png);
+	background-position: center top;
+  	background-repeat: no-repeat;
+}
+.bgimg{
+	position: relative;
+}
+.bgimg .content{
+	position: absolute;
+	top: 140px;
+	left: 768px;
+}
+.bgimg .content span{
+	color: white;
+	font-size: 60px;
+}
+.bgimg .content .same{
+	color: #afb5b9;
+}
+.bgimg .content p{
+	margin-top: 10px;
+}
+.bgimg .content p span {
+	font-size: 20px;
+	color: #949b9d;
+	letter-spacing: 33px;
+	font-family: "Century Gothic";
+}
+.bgimg .content p .space{
+	margin-right: 20px;
+}
+/*********************主题背景图部分**********************/
+.main{
+	width: 1200px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+.main .top{
+	color: #595959;
+}
+.main .top span a{
+	color: #595959;
+}
+.main .top span a:hover{
+	color: #072c4c;
+}
+.main .top .text{
+	color: #072c4c;
+}
+.main .nav{
+	margin-top: 25px;
+	border-bottom: 1px solid #b3b3b3;
+}
+.main .nav span{
+	float:right;
+}
+.main .nav .text a{
+	color: white;
+	background-color: #f14e0d;
+}
+.main .nav span a{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #686868;
+}
+.main .nav span a:hover{
+	color: white;
+	background-color: #f14e0d;
+}
+.main .list{
+	margin-top: 60px;
+}
+.main .list .list_1{
+	margin-top: 20px;
+	border-bottom: 1px solid #a1a1a1;
+}
+.main .list .list_1 img{
+	float: left;
+}
+.main .list .list_1 dl{
+	float: right;
+	width: 600px;
+	padding: 26px 180px 55px 10px;
+}
+.main .list .list_1 .text1 a{
+	font-size: 22px;
+	color: #195081;
+}
+.main .list .list_1 .text2{
+	margin-top: 14px;
+	font-size: 15px;
+	color: #595959;
+	line-height: 1.6em;
+}
+.main .list .list_1 .text2 span{
+	font-size: 12px;
+	color: #a1a1a1;
+}
+.main .list .list_1 .text3{
+	margin-top: 24px;
+	font-size: 12px;
+	color: #a1a1a1;
+}
+.main .bottom {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+.main .bottom span{
+	margin: 0px 3px;
+}
+.main .bottom span a{
+	color: #333333;
+}
+.main .bottom span a:hover{
+	color: #2273b9;
+}
+.main  .bottom .page a{
+	color: #2273b9;
+}
+/**********************主题部分*************************/
+.foot{
+	background-image: url(../images/index/foot.png);
+	padding: 20px 0px;
+}
+.foot .center{
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;
+}
+.foot .center .hot{
+	height: 100px;
+	line-height: 100px;
+	font-size: 20px;
+	color: white;
+	text-indent: 612px;
+	background-image: url(../images/nav/logo.png);
+	background-repeat: no-repeat;
+	background-position: 403px center;
+}
+.foot .center .hot:after{
+	content: "";
+	height: 60px;
+	position: absolute;
+	top: 22px;
+	left: 600px;
+	border-left: 1px solid #e4e6e6;
+}
+.foot .center .footer1{
+	position: relative;
+}
+.foot .center .footer1 img{
+	vertical-align: middle;
+}
+.foot .center .footer1 span{
+	color: #969898;
+}
+.foot .center .footer1 span:after{
+	content: "";
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: 19px;
+	left: 173px;
+ 	border: 9px solid transparent;
+  	border-top-color: #206fb5;
+}
+.foot .center .footer2{
+	width: 670px;
+	margin-left: 87px;
+}
+.foot .center .footer2 span,a{
+	color:#969898;
+}
+.foot .center .footer2 .ss{
+	margin-left: 38px;
+}
+.foot .center .footer2 ul .ll{
+	font-size: 18px;
+	color:#969898;
+	margin-bottom: 6px;
+}
+.foot .center .footer2 .link2{
+	margin-left: 120px;
+	margin-right: 120px;
+}
+.foot .center .footer2 .link4{
+	margin-left: 120px;
+}
+.foot .center .footer3 p{
+	font-size: 12px;
+	color:#969898;
+}
+.foot .center .footer3 div{
+	width: 108px;
+	height: 108px;
+	margin-top: 6px;
+	background-image: url(../images/nav/erweima.png);
+}
+/*******************尾部************************/
+.sadebar{
+	position: fixed;
+	right: 10px;
+	top: 59%;
+}
+.sadebar ul li a{
+	display: block;
+	width: 44px;
+	height: 30px;
+	background-color: #003967;
+}
+.sadebar ul .pg1 a{
+	padding-top: 20px;
+	background-image: url(../images/nav/33.png);
+	background-repeat: no-repeat;
+	background-position: center 22px;
+}
+.sadebar ul .pg2 a{
+	background-image: url(../images/nav/22.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.sadebar ul .pg3 a{
+	padding-bottom: 21px;
+	background-image: url(../images/nav/11.png);
+	background-repeat: no-repeat;
+	background-position: 12px 10px;
+}
+/***************固定侧导航栏*******************/

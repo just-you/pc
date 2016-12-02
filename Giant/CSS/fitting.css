@@ -1,0 +1,330 @@
+.banner{
+	z-index: 1;
+	height: 600px;
+	position: relative;
+	background-image: url(../images/nav/77.png);
+	background-position: center top;
+  	background-repeat: no-repeat;
+}
+.banner .banner-center{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner .banner-center img{
+	position: absolute;
+	top: 60px;
+	right: 170px;
+}
+.banner .bgimg{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #9dadbc;
+}
+.banner .banner-center .box{
+	position: absolute;
+	top: 567px;
+	left: 455px;
+}
+.banner .banner-center .box span a{
+	display: inline-block;
+	width: 46px;
+	height: 4px;
+	margin-right: 12px;
+	background-color: #88a0b5;
+}
+.banner .banner-center .box span a:hover{
+	background-color: #164e7f;
+}
+.main{
+	width: 100%;
+	background-color: #e2e1e1;
+}
+.main .center{
+	padding-bottom: 100px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.main .center .toplist{
+	width: 600px;
+	margin: 0 auto;
+	padding:70px 0px 200px;
+}
+.main .center .toplist .page{
+	float: left;
+	position: relative;
+}
+.main .center .toplist .page2{
+	margin: 0 98px;
+}
+.main .center .toplist .page .title{
+	position: absolute;
+	top: 57px;
+	left: 24px;
+	text-align: center;
+}
+.main .center .toplist .page .title .top-title{
+	font-size: 20px;
+	color: white;
+}
+.main .center .toplist .page .title .bottom-title{
+	font-size: 10px;
+	color: white;
+}
+.main .hotmount{
+	width: 1200px;
+	height: 776px;
+	position: relative;
+	background-color: white;
+}
+.main .hotmount .hot{
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+	color: #353535;
+	margin: 50px 0px 0px 100px;
+	border: 1px solid #f98f7a;
+}
+.main .hotmount .hot img{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+.main .hotmount .hot span{
+	font-family: "Century Gothic";
+	font-size: 35px;
+	color: #353535;
+}
+.main .hotmount .bicycle{
+	position: absolute;
+	top:-120px;
+	right: 55px; 
+}
+.main .hotmount .bicycle span{
+	float: right;
+	color: #595959;
+}
+.main .hotmount .bicycle .tip1{
+	height: 35px;
+	line-height:35px;
+	margin-right: 20px;
+}
+.main .hotmount .bicycle p .tip a{
+	display: block;
+	padding: 6px 20px 6px 10px;
+	color:  #595959;
+	border: 1px solid #f98f7a;
+	background-image: url(../images/nav/7.png);
+	background-repeat: no-repeat;
+	background-position: 77px 12px;
+}
+.main .hotmount .show{
+	margin-top: 30px;
+	width: 1200px;
+}
+.main .hotmount .show .bicycle1 span{
+	float: right;
+	color: #595959;
+}
+.main .hotmount  .show .bicycle1 p{
+	padding-right: 65px;
+}
+.main .hotmount  .show .bicycle1 .tip1{
+	height: 35px;
+	line-height:35px;
+	margin-right: 20px;
+}
+.main .hotmount  .show .bicycle1 p .tip a{
+	display: block;
+	padding: 6px 20px 6px 10px;
+	color:  #595959;
+	border: 1px solid #f98f7a;
+	background-image: url(../images/nav/7.png);
+	background-repeat: no-repeat;
+	background-position: 77px 12px;
+}
+.main .center .content2{
+	width: 1200px;
+	height: 776px;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	position: relative;
+	background-color: white;
+}
+
+.main .content2 .hot{
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+	color: #353535;
+	margin: 50px 100px 0px 0px;
+	border: 1px solid #f98f7a;
+}
+.main .content2 .hot img{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+.main .content2 .hot span{
+	font-family: "Century Gothic";
+	font-size: 35px;
+	color: #353535;
+}
+.main .content2 .bicycle{
+	position: absolute;
+	top:-120px;
+	left: 55px; 
+}
+.main .content2 .bicycle span{
+	float: right;
+	color: #595959;
+}
+.main .content2 .bicycle .tip1{
+	height: 35px;
+	line-height:35px;
+	margin-right: 20px;
+}
+.main .content2 .bicycle p .tip a{
+	display: block;
+	padding: 6px 20px 6px 10px;
+	color:  #595959;
+	border: 1px solid #f98f7a;
+	background-image: url(../images/nav/7.png);
+	background-repeat: no-repeat;
+	background-position: 77px 12px;
+}
+.main .content2 .show{
+	margin-top: 30px;
+	width: 1200px;
+}
+.main .content2 .show .bicycle1 span{
+	float: right;
+	color: #595959;
+}
+.main .content2  .show .bicycle1 p{
+	padding-right: 65px;
+}
+.main .content2  .show .bicycle1 .tip1{
+	height: 35px;
+	line-height:35px;
+	margin-right: 20px;
+}
+.main .content2  .show .bicycle1 p .tip a{
+	display: block;
+	padding: 6px 20px 6px 10px;
+	color:  #595959;
+	border: 1px solid #f98f7a;
+	background-image: url(../images/nav/7.png);
+	background-repeat: no-repeat;
+	background-position: 77px 12px;
+}
+/*主体部分*/
+.foot{
+	background-image: url(../images/index/foot.png);
+	padding: 20px 0px;
+}
+.foot .center{
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;
+}
+.foot .center .hot{
+	height: 100px;
+	line-height: 100px;
+	font-size: 20px;
+	color: white;
+	text-indent: 612px;
+	background-image: url(../images/nav/logo.png);
+	background-repeat: no-repeat;
+	background-position: 403px center;
+}
+.foot .center .hot:after{
+	content: "";
+	height: 60px;
+	position: absolute;
+	top: 22px;
+	left: 600px;
+	border-left: 1px solid #e4e6e6;
+}
+.foot .center .footer1{
+	position: relative;
+}
+.foot .center .footer1 img{
+	vertical-align: middle;
+}
+.foot .center .footer1 span{
+	color: #969898;
+}
+.foot .center .footer1 span:after{
+	content: "";
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: 19px;
+	left: 173px;
+ 	border: 9px solid transparent;
+  	border-top-color: #206fb5;
+}
+.foot .center .footer2{
+	width: 670px;
+	margin-left: 87px;
+}
+.foot .center .footer2 span,a{
+	color:#969898;
+}
+.foot .center .footer2 .ss{
+	margin-left: 38px;
+}
+.foot .center .footer2 ul .ll{
+	font-size: 18px;
+	color:#969898;
+	margin-bottom: 6px;
+}
+.foot .center .footer2 .link2{
+	margin-left: 120px;
+	margin-right: 120px;
+}
+.foot .center .footer2 .link4{
+	margin-left: 120px;
+}
+.foot .center .footer3 p{
+	font-size: 12px;
+	color:#969898;
+}
+.foot .center .footer3 div{
+	width: 108px;
+	height: 108px;
+	margin-top: 6px;
+	background-image: url(../images/nav/erweima.png);
+}
+/*******************尾部************************/
+.sadebar{
+	position: fixed;
+	right: 10px;
+	top: 59%;
+}
+.sadebar ul li a{
+	display: block;
+	width: 44px;
+	height: 30px;
+	background-color: #003967;
+}
+.sadebar ul .pg1 a{
+	padding-top: 20px;
+	background-image: url(../images/nav/33.png);
+	background-repeat: no-repeat;
+	background-position: center 22px;
+}
+.sadebar ul .pg2 a{
+	background-image: url(../images/nav/22.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.sadebar ul .pg3 a{
+	padding-bottom: 21px;
+	background-image: url(../images/nav/11.png);
+	background-repeat: no-repeat;
+	background-position: 12px 10px;
+}
+/***************固定侧导航栏*******************/

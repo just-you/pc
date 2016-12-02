@@ -1,0 +1,166 @@
+.main{
+	width: 1200px;
+	margin:0px auto;
+	padding-bottom: 90px;
+}
+.main .toplist{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.main .toplist span{
+	color: #595959;
+}
+.main .toplist a{
+	color: #595959;
+}
+.main .toplist .now a{
+	color: #072c4c;
+}
+.main .toptext{
+	position: relative;
+	margin-bottom: 30px;
+}
+.main .toptext span{
+	color: #7e7f7f;
+}
+.main .toptext .specal{
+	font-size: 22px;
+	color: black;
+	font-family: "宋体";
+}
+.main .toptext .line:after{
+	content: "";
+	width: 850px; 
+	border-bottom: 1px solid #b3b3b3;
+	position: absolute;
+	top: 22px;
+	left: -928px;
+}
+.main .banner{
+	margin-bottom: 30px;
+}
+.main .content{
+	width: 1200px;
+	margin-bottom: 100px;
+}
+.main .content dl{
+	width: 250px;
+	float: left;
+	position: relative;
+}
+.main .content dl dt{
+	color: #333333;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.main .content dl dd{
+	margin-bottom: 25px;
+}
+.main .content dl dd a{
+	color: #808080;
+}
+.main .content dl dd a:hover{
+	color: #f14e0d;
+}
+.main .content dl dt:after{
+	content: "";
+	width: 72px;
+	position: absolute;
+	top:33px;
+	left: 0px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.main .content .text{
+	width: 300px;
+}
+.main .content .text1{
+	margin-right: 25px;
+}
+.main .content .text .name{
+	text-align: center;
+	margin: 10px 0px 20px 0px;
+}
+.main .content .text .check{
+	position: relative;
+}
+.main .content .text .check a{
+	color: black;
+	border-bottom: 1px solid #666666;
+}
+.main .content .text .check a:after{
+	content: "";
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: 6px;
+	left: 75px;
+	border: 6px solid transparent;
+	border-left-color: #737373;
+}
+.main h1{
+	text-align: center;
+	color: #595959;
+	font-size: 44px;
+	margin-bottom: 30px;
+}
+.main .last .boxleft{
+	width: 750px;
+}
+.main .last .boxleft dl{
+	float: left;
+	width: 322px;
+	height: 368px;
+	padding: 30px 0px 0px 30px;
+	background-color: #e6e6e6;
+}
+.main .last .boxleft dl .text1{
+	color: #a7a7a7;
+	margin-bottom: 10px;
+}
+.main .last .boxleft dl .text2{
+	font-size: 26px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+.main .last .boxleft dl .text3 a{
+	padding: 3px 6px;
+	/*对内联元素设置padding-top只对其背景色有影响*/
+	color: white;
+	font-size: 12px;
+	background-color: #195081;
+}
+.main .last .boxleft dl .text4{
+	margin-top:20px;
+	color: #666666;
+	font-size: 17px;
+}
+.main .last .boxright{
+	width: 420px;
+}
+.main .last .boxright .box{
+	margin-bottom: 30px;
+}
+.main .last .boxright .boxtop dl{
+	float: left;
+	width: 202px;
+	height: 174px;
+	padding:10px 0px 0px 30px;
+	background-color: #e6e6e6;
+}
+.main .last .boxright .boxtop dl .text1{
+	color: #a7a7a7;
+	margin-bottom: 10px;
+}
+.main .last .boxright .boxtop dl .text2{
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.main .last .boxright .boxtop dl .text3 a{
+	padding: 3px 6px;
+	/*对内联元素设置padding-top只对其背景色有影响*/
+	color: white;
+	font-size: 12px;
+	background-color: #195081;
+}
+/****************内容主体部分**********************/
