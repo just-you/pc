@@ -1,0 +1,38 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.box8 h2{
+	font-weight: normal;
+	color: #8fa9e2;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.box8 p{
+	text-align: center;
+	color: #f7fcfc;
+	margin-bottom: 10px;
+}
