@@ -11,6 +11,42 @@
 	<script src="js/index.js"></script>
 	<script src="js/tabs.js"></script>
 	<script src="js/jquery.imgscroll.js"></script>
+	<style type="text/css">
+		.searchBox{
+			position: relative;
+		}
+		.searchBox>ul{
+			box-sizing:border-box;
+			width: 100%;
+			/*height: 300px;*/
+			background-color:white;
+			position: absolute;
+			z-index: 3;
+			border: 1px solid #ccc;
+		}
+		.searchBox>ul li{
+			overflow: hidden;
+			cursor: pointer;
+			padding: 5px 10px;
+			height: 20px;
+			line-height: 20px;
+			text-align: left;
+			font-size: 14px;
+			background-color: white;
+			color: black;
+			transtion:all 3s;
+		}
+		.searchBox>ul li:hover{
+			background-color: #fb6b39;
+			color: white;
+		}
+		.searchBox>ul li span:nth-child(1){
+			float: left;
+		}
+		.searchBox>ul li span:nth-child(2){
+			float: right;
+		}
+	</style>
 </head>
 <body>
 <!-- 顶部导航 -->
@@ -84,8 +120,8 @@
 			<a href="index.html" class="logo"><img src="images/header/header-logo.png" alt="logo"></a>
 			<div class="search">
 				<div class="searchBox">
-					<input type="text" placeholder="请输入您想要的">
-					<button href="#">搜索</button>
+					<input type="text" placeholder="请输入您想要的" id="search">
+					<button href="#"  id="serch-btn">搜索</button>
 				</div>
 				<div class="keaywordSearch">
 					<a href="#" class="kwHot">一元好货</a>
@@ -2724,6 +2760,30 @@
 	
 		$('#goods>li').last().css('border-bottom','1px solid #FC9D9D');
 		//下拉结束
+</script>
+<script type="text/javascript">
+	$("#search").on("focus",function(){
+		$('#searchlist').show();
+	})
+	$("#search").on("keyup",function(){
+		if($("#searchlist").length==0){
+			$('#serch-btn').after('<ul id="searchlist"></ul>')
+		}
+		$.ajax({
+			url:"https://suggest.taobao.com/sug?code=utf-8&q="+$("#search").val()+"&_ksTS=1480925512364_2020&callback=jsonp2021&area=b2c&code=utf-8&k=1&bucketid=3&src=tmall_pc&isg=AmFhV5htnXVOejFAZU8Rz5ZOcC0RbUPnRMDfFMM2EWjHKoD8DV8G0Nks-ulW&isg2=Ai0t6DLs%2FG31tA4ieeIBMYLevcOnxmFc",
+			dataType:"jsonp",
+			success:function(data){
+				var html="";
+				$.each(data.result,function(i,el){
+					html+="<li>"+"<span>"+el[0]+"</span>"+"<span>约"+el[1]+"个结果</span>"+"</li>";
+				});
+				$('#searchlist').html(html);
+			}
+		})		
+	});
+	$("#search").on("blur",function(){
+		$('#searchlist').hide();
+	})
 </script>
 	
 </body>
