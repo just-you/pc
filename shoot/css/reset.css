@@ -1,0 +1,108 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, address, code, del, dfn, em,
+ img, dl, dt, dd, ol, ul, li, tt, form, input, label,
+ table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	border: 0 none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box; 
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+.main{
+	width: 1100px;
+	margin:0 auto;
+}
+body,html{
+	font-family: "Microsoft Yahei","Vijaya";
+}
+#header{
+	height: 80px;
+	line-height: 80px;
+}
+.logo img{
+	vertical-align: middle;
+	padding-left: 75px;
+}
+#header ul{
+	padding-right: 22px;
+}
+#header ul li{
+	float: left;
+	width: 130px;
+	line-height: 80px;
+	text-align: center;
+}
+#header ul li a{
+	font-size: 16px;
+	color: #282323;
+}
+#header ul .act a{
+	color: #e3ae80;
+}
+#footer{
+	height: 240px;
+	background-color: #282828;
+	padding-top: 35px;
+	min-width: 1100px;
+}
+#footer dl{
+	float: left;
+	width: 273px;
+	text-align: center;
+	border-right: 1px solid #e3d9d9;
+}
+#footer dl:nth-child(4){
+	border:none;
+}
+#footer dt{
+	padding:0 0 20px 0;
+}
+#footer dt a{
+	font-size: 14px;
+	color: #e3d9d9;
+	font-family: "Ã¥Â®â€¹Ã¤Â½â€œ";
+}
+#footer dd{
+	line-height: 20px;
+}
+#footer dd a{
+	font-size: 12px;
+	color: #e3d9d9;
+	font-family: "Ã¥Â®â€¹Ã¤Â½â€œ";
+}
+#footer p{
+	text-align: center;
+	line-height: 25px;
+}
+#footer p a{
+	font-size: 12px;
+	color: #e3d9d9;
+}
+#footer p:nth-of-type(1){
+	padding-top: 30px;
+
+}
+#banner img{
+	min-width: 1100px;
+	width: 100%;
+	vertical-align: middle;
+}
