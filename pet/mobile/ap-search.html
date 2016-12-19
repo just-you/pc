@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>search</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/mobile-reset.css" rel="stylesheet">
+<link href="../font/iconfont.css" rel="stylesheet">
+<link href="../css/stylez.css" rel="stylesheet">
+<script src="../js/zepto.js"></script>
+<script src="../js/touch.js"></script>
+<script src="../js/base.js"></script>
+</head>
+<body>
+    <div class="ap-search2">
+		<span class="iconfont">&#xe641;</span><input type="search" placeholder="用户名称/ID号" autofocus="autofocus"><em>取消</em>
+    </div>
+    <script>
+    $(function(){
+    	$('.ap-search2 em').on('touchend',function(){
+			window.history.go(-1);
+		})
+    })
+    	
+    </script>
+</body>
+</html>

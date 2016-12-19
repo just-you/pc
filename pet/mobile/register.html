@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <title>register</title>
+    <link rel="stylesheet" href="../css/mobile-reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+</head>
+<body class="rg-body">
+    <header class="rg-head">
+        <i class="iconfont" id="callbacks">&#xe623;</i>
+        <p>登录</p>
+        <p><a href="#" id="fastregister">快速注册</a></p>
+    </header>
+    <form action="" class="rg-form" id="rg-form">
+        <div class="rg-ic1"><i class="iconfont">&#xe607;</i>账号<input type="search" placeholder="请输入账号" id="rgic1"></div>
+        <div class="rg-ic2"><i class="iconfont">&#xe626;</i>密码<input type="search" placeholder="请输入登录密码" id="rgic2"></div>
+    </form>
+    <input class="rg-register cm-input" id="cminput" type="button" value="立即登录">
+    <input class="rg-password cm-input" type="button" value="忘记密码？">
+    <div class="rg-line"></div>
+    <p class="rg-th">第三方账号直接登录</p>
+    <div class="rg-ft clearfix">
+        <div class="rg-foot"><i class="iconfont">&#xe643;</i></div>
+        <div class="rg-foot"><i class="iconfont">&#xe642;</i></div>
+        <div class="rg-foot"><i class="iconfont">&#xe644;</i></div>
+    </div>
+    <script src="../js/swiper.js"></script>
+<script>
+     var fastregister=document.getElementById("fastregister");
+     var rgic1=document.getElementById("rgic1");
+     var rgic2=document.getElementById("rgic2");
+     fastregister.onclick=function () {
+        window.location.href="fastregister.html";
+     }
+     var cminput=document.getElementById("cminput");
+     cminput.onclick=function () {
+        window.location.href="myown.html";
+     }
+     var callbacks=document.getElementById("callbacks");
+     callbacks.onclick=function () {
+        window.location.href="../index.html";
+     }
+</script>
+</body>
+</html>

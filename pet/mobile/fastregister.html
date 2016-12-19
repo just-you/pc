@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <title>experts online</title>
+    <link rel="stylesheet" href="../css/mobile-reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/base.js"></script>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/touch.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body class="fr-body">
+    <header class="fr-fr">
+        <i class="iconfont" id="callbackss">&#xe623;</i>
+        <p>快速注册</p>
+        <p><a href="#" id="register">登录</a></p>
+    </header>
+    <div class="fr-content">
+        <form class="fr-form" action="">
+            <i class="iconfont fr-ic1">&#xe607;</i>账号<input class="fr-in1 cm-input" type="search" placeholder="请输入账号"><br />
+            <i class="iconfont fr-ic2">&#xe626;</i>密码<input class="fr-in2 cm-input" type="search" placeholder="请输入登录密码"><br />
+            <input class="fr-in4 cm-input" type="search" placeholder="请确认登录密码"><br />
+            <i class="iconfont fr-ic3">&#xe60f;</i>验证<input class="fr-in3 cm-input" type="search" placeholder="请输入您收到的验证码"><br />
+            <div class="fr-get">获取验证码</div>
+        </form>
+    </div>
+    <input class="fr-btn cm-input" type="button" value="立即注册">
+    <p class="fr-use"><i class="iconfont fr-read">&#xe60f;</i>已阅读并将遵守<span>《用户协议》</span></p>
+    <script src="../js/swiper.js"></script>
+   <script>
+     var register=document.getElementById("register");
+     register.onclick=function () {
+        window.location.href="register.html";
+     }
+     var callbackss=document.getElementById("callbackss");
+     callbackss.onclick=function () {
+        window.location.href="../index.html";
+     }
+</script>
+</body>
+</html>

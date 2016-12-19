@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>遛遛</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../font/iconfont.css">
+<link rel="stylesheet" href="../css/animate.min.css">
+<link rel="stylesheet" href="../css/mobile-reset.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/base.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+<script type="text/javascript" src="../js/Zepto.js"></script>
+<script type="text/javascript" src="../js/touch.js"></script>
+<script type="text/javascript" src="../js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="../js/demo.js"></script>
+<script type="text/javascript" src="../js/style.js"></script>
+<style>
+	.comment-box { padding: 10px 0; border-top: 1px solid #eee;font-size: 0.28rem;position:relative;}
+	.comment-text{position: absolute;top:26%;left: 14%;color: #666;font-size: 0.2rem}
+	.comment-text .user{color: #1156c7;}
+	.comment-time{color: #ccc;margin-left: 3.5%;}
+    .comment-box .myhead { float: left; width: 7%; height: 7%; margin-left: 3.5%;}
+    .comment-box .comment-content { float: left; width: 400px; }
+    .comment-box .comment-content .comment-time { margin-top: 3px; line-height: 0.22rem;font-size: 0.22rem;}
+    .comment-box .comment-content .comment-praise {color: #369; padding-left: 17px; height: 20px; background: url("../images/praise.png") no-repeat;  position: absolute; bottom: 0px; right:11%;}
+    .comment-box .comment-content .comment-operate {color:red; height: 20px;  position: absolute; bottom: 0px; right:2%;}
+    .comment-box .comment-content:hover .comment-praise { display: inline-block;}
+    .comment-box .comment-content:hover .comment-operate { display: inline-block;}
+    .text-box .comment { border: 1px solid #ccc; display: block; height: 0.5rem; width:70%; padding: 5px; resize: none; color: #ccc;margin-left: 3.5%;font-size: 0.22rem;outline: none;}
+	.text-box .btn { font-size: 0.26rem;float: right; width: 1rem; height: 0.49rem; border:none; color: #fff; background: #c3c3c3;margin-top: -6.7%;margin-right: 11%;outline: none; }
+    .text-box-on .comment{ height:0.5rem; color: #333;outline: none;}
+    .text-box-on .btn{ display: inline;outline: none;background: #4679AC}
+    #camera{position: absolute;top: 16%;right: 5%;width: 8%;opacity: 0;
+		    filter: alpha(opacity=0);}
+</style>
+</head>
+<body>
+	<header class="tarry-header">
+   		<ul class="clearfix tarry-nav">
+   			<li class="act">精选</li>
+	   		<li>推荐</li>
+	   		<li>关注</li>
+   		</ul>
+   		<p><img src="../images/ll-xj.png" alt=""></p>
+   		<input type="file" capture="camera" accept="image/*" id="camera" />
+	</header>
+   	<div class="tarry-handpick tarry-select">
+	    <section class="tarry-banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../images/ll-banner.png" alt=""></div>
+					<div class="swiper-slide"><img src="../images/ll-banner2.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="../images/ll-banner3.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="../images/ll-banner4.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="../images/ll-banner5.jpg" alt=""></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+	    </section>
+	    <section class="tarry-information">
+	    	<div class="tarry-information-name">
+	    		<ul class="clearfix">
+	    			<li><img src="../images/ll-tx1.jpg" alt=""></li>
+	    			<li>
+	    				<span class="infor">fansToa</span>
+	    				<i class="iconfont">&#xe604</i>
+	    				<span class="infor2">浙江 温州</span>
+	    			</li>
+	    			<li class="gz">+ 关注</li>
+	    		</ul>
+	    		<div class="xxx">
+	    			<img src="../images/ll-tx2.jpg" alt="">
+    				<span class="infor3">杰克 萨摩耶</span>
+    				<i class="iconfont">&#xe610</i>
+	    		</div>
+	    	</div>
+	    	<div class="tarry-information-banner">
+	    		<img src="../images/ll-con.jpg" alt="">
+	    	</div>
+	    	<div class="tarry-information-comment">
+	    		<div class="comment1">
+	    			<p>愉快的我们</p>
+	    		</div>
+	    		<div class="comment2">
+	    			<img src="../images/ll-tx3.jpg" alt="">
+	    			<span>50</span>
+	    		</div>
+	    		<div class="comment3">
+	    			<ul class="clearfix">
+	    				<li class="bang"><i class="iconfont">&#xe628;</i> 赞</li>
+		    			<li class="profile"><i class="iconfont">&#xe624;</i> 评论</li>
+		    			<li class="tarry-share"><i class="iconfont">&#xe614;</i> 分享</li>
+	    			</ul>
+	    		</div>
+	    		<div class="comment4">
+	    			<div id="list">
+				    	<div class="box clearfix">
+				    		<div class="content">
+				    			<div class="text-box" style="margin-top: -1%;margin-bottom: 2%">
+				                    <textarea class="comment" autocomplete="off">评论…</textarea>
+				                    <button class="btn ">发 送</button>
+			                	</div>
+			                 	<div class="comment-list">
+
+			                	</div>
+			            	</div>
+			        	</div>
+    				</div>
+  					<ul id="comment4ul1" class="clearfix">
+  						<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+		    			<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+		    			<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+  					</ul>
+	    		</div>
+	    		<div class="comment5">
+	    			<p class="sumcomment">查看所有评论</p>
+	    		</div>
+				<div class="comment5-off">
+					<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+				</div>
+	    	</div>
+	    </section>
+	    <section class="tarry-information">
+	    	<div class="tarry-information-name">
+	    		<ul class="clearfix">
+	    			<li><img src="../images/ll-tx1.jpg" alt=""></li>
+	    			<li>
+	    				<span class="infor">fansToa</span>
+	    				<i class="iconfont">&#xe604</i>
+	    				<span class="infor2">浙江 温州</span>
+	    			</li>
+	    			<li class="gz">+ 关注</li>
+	    		</ul>
+	    		<div class="xxx">
+	    			<img src="../images/ll-tx2.jpg" alt="">
+    				<span class="infor3">杰克 萨摩耶</span>
+    				<i class="iconfont">&#xe610</i>
+	    		</div>
+	    	</div>
+	    	<div class="tarry-information-banner">
+	    		<img src="../images/ll-con2.jpg" alt="">
+	    	</div>
+	    	<div class="tarry-information-comment"  style="margin-bottom:1rem">
+	    		<div class="comment1">
+	    			<p>愉快的我们</p>
+	    		</div>
+	    		<div class="comment2">
+	    			<img src="../images/ll-tx3.jpg" alt="">
+	    			<span>50</span>
+	    		</div>
+	    		<div class="comment3">
+	    			<ul class="clearfix">
+	    				<li class="bang"><i class="iconfont">&#xe628;</i> 赞</li>
+		    			<li class="profile"><i class="iconfont">&#xe624;</i> 评论</li>
+		    			<li class="tarry-share"><i class="iconfont">&#xe614;</i> 分享</li>
+	    			</ul>
+	    			<div id="tarry-myshare" style="display:none">
+				     	<div class="header">
+				        	<h1>分享到</h1>
+				      	</div>
+				        <div class="tarry-lx">
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<i class="iconfont">&#xe643</i>
+										<span>微信好友</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="iconfont">&#xe642</i>
+										<span>QQ</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="iconfont">&#xe644</i>
+										<span>微博</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<i class="iconfont">&#xe61c</i>
+										<span>QQ空间</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="iconfont">&#xe63d</i>
+										<span>朋友圈</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+			    	</div>
+	    		</div>
+	    		<div class="comment4">
+	    			<div id="list1">
+				    	<div class="box clearfix">
+				    		<div class="content">
+				    			<div class="text-box" style="margin-top: -1%;margin-bottom: 2%">
+				                    <textarea class="comment" autocomplete="off">评论…</textarea>
+				                    <button class="btn ">发 送</button>
+			                	</div>
+			                 	<div class="comment-list">
+
+			                	</div>
+			            	</div>
+			        	</div>
+    				</div>
+  					<ul id="comment4ul1" class="clearfix">
+  						<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+		    			<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+		    			<li><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></li>
+  					</ul>
+	    		</div>
+	    		<div class="comment52">
+	    			<p class="sumcomment">查看所有评论</p>
+	    		</div>
+	    		<div class="comment52-off">
+					<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+	    			<p><span>泡在糖菓王子的小肥仔：</span><span>真棒</span></p>
+				</div>
+	    	</div>
+	    </section>
+   	</div>
+   	<div class="tarry-recommended tarry-select" style="display:none">
+		<section class="tarry-information">
+			<div class="tarry-information-name">
+				<ul class="clearfix">
+					<li><img src="../images/ll-tx1.jpg" alt=""></li>
+					<li>
+						<span class="infor">fansToa</span>
+						<i class="iconfont">&#xe604</i>
+						<span class="infor2">浙江 温州</span>
+					</li>
+					<li class="gz">+ 关注</li>
+				</ul>
+				<div class="xxx">
+					<img src="../images/ll-tx2.jpg" alt="">
+					<span class="infor3">杰克 萨摩耶</span>
+					<i class="iconfont">&#xe610</i>
+				</div>
+			</div>
+			<div class="tarry-information-banner">
+				<img src="../images/ll-con2.jpg" alt="">
+			</div>
+		</section>
+   	</div>
+    <div class="tarry-attention tarry-select" style="display:none">
+   		<section class="tarry-information">
+	    	<div class="tarry-information-name">
+	    		<ul class="clearfix">
+	    			<li><img src="../images/ll-tx1.jpg" alt=""></li>
+	    			<li>
+	    				<span class="infor">fansToa</span>
+	    				<i class="iconfont">&#xe604</i>
+	    				<span class="infor2">浙江 温州</span>
+	    			</li>
+	    			<li class="gz">+ 关注</li>
+	    		</ul>
+	    		<div class="xxx">
+	    			<img src="../images/ll-tx2.jpg" alt="">
+    				<span class="infor3">杰克 萨摩耶</span>
+    				<i class="iconfont">&#xe610</i>
+	    		</div>
+	    	</div>
+	    	<div class="tarry-information-banner">
+	    		<img src="../images/ll-con.jpg" alt="">
+	    	</div>
+	    </section>
+   </div>
+   <div id="mo-footer">
+	    	<ul>
+	    		<li><a href="../index.html"><i class="iconfont">&#xe645;</i><p>首页</p></a></li>
+	    		<li class="mo-footer-color-active"><a href="#"><i class="iconfont">&#xe61e;</i><p>遛遛</p></a></li>
+	    		<li><a href="./Service.html"><i class="iconfont">&#xe62b;</i><p>服务</p></a></li>
+	    		<li><a href="./Service.html"><i class="iconfont">&#xe601;</i><p>我的</p></a></li>
+	    	</ul>
+	    
+    </div>
+</body>
+</html>
